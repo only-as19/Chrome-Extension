@@ -1,0 +1,48 @@
+ Save Leads Chrome Extension
+This is a simple Chrome extension to save your favorite links. You can add links manually or save the URL of your current tab with one click. All saved links are stored locally in your browser and stay even after closing Chrome.
+
+✨ Features
+✅ Save input — Add a link manually by typing it in the input box.
+
+✅ Save tab — Save the URL of your current active tab instantly.
+
+✅ View links — All saved links are shown as clickable items.
+
+✅ Delete all — Double-click the DELETE ALL button to clear all saved links.
+
+✅ Persistent storage — Uses localStorage to keep your links safe.
+
+⚙️ How to Use
+Clone or download this repository.
+
+Add a manifest.json file if not present (with proper permissions).
+
+Open chrome://extensions/ in Chrome.
+
+Enable Developer mode.
+
+Click Load unpacked and select this project folder.
+
+Open the extension popup:
+
+Enter a URL and click SAVE INPUT.
+
+Or click SAVE TAB to add the current tab’s URL.
+
+Double-click DELETE ALL to remove all saved links.
+
+🗂️ Tech Used
+HTML — Structure for input, buttons, and list.
+
+CSS — Simple, clean design.
+
+JavaScript — Handles saving, rendering, and Chrome tab API.
+
+✅ Permissions
+This extension uses:
+
+tabs — to get the current tab URL.
+
+storage — to save data locally.
+
+This project is free to use for learning or personal productivity.
