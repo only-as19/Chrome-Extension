@@ -46,3 +46,9 @@ tabBtn.addEventListener('click', function(){
     })
     
 });
+
+deleteBtn.addEventListener('dblclick', function(){
+    localStorage.clear();
+    myLead = [];
+    render(myLead);
+});
