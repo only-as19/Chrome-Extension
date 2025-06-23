@@ -36,3 +36,13 @@ function savedLead(){
    localStorage.setItem("myLead",JSON.stringify(myLead))
    render(myLead);
 }
+
+
+tabBtn.addEventListener('click', function(){
+    chrome.tabs.query({active : true, currentWindow: true}, function(tabs){
+    myLead.push(tabs[0].url);
+    localStorage.setItem("myLead",JSON.stringify(myLead));
+    render(myLead);
+    })
+    
+});
