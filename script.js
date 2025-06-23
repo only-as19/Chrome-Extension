@@ -19,3 +19,20 @@ function render(leads){
     }
     ulEl.innerHTML = listItems;
 }
+
+
+const leadFromLocalStorage = JSON.parse(localStorage.getItem("myLead"));
+if(leadFromLocalStorage){
+    myLead = leadFromLocalStorage;
+    render(myLead);
+}
+
+
+
+savedBtn.addEventListener('click', savedLead);
+function savedLead(){
+   myLead.push(inputEl.value);
+   inputEl.value="";
+   localStorage.setItem("myLead",JSON.stringify(myLead))
+   render(myLead);
+}
